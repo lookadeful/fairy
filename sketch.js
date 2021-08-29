@@ -56,6 +56,7 @@ function draw() {
   	//escribe aquí el código para detener la estrella en la mano del hada
 	if(star.y > 470 && starBody.position.y > 470) {
 		Matter.Body.setStatic(starBody, true);
+		fairy.velocityX = 0
 	}
 
   	drawSprites();
@@ -76,4 +77,6 @@ function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		fairy.velocityX = 2
 	}
+
+
 }
